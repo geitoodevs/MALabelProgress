@@ -23,15 +23,21 @@
 @property(nonatomic) BOOL unFillMode;
 
 
--(void) setProgressPercent:(CGFloat) percent animated:(BOOL) animated;
+-(void) setProgressPercent:(CGFloat) percent
+                  animated:(BOOL) animated;
 
--(void) setCircleProgressWithLineWidth:(CGFloat) lineWidth
-                         progressWidth:(CGFloat) progressWidth
-                             lineColor:(UIColor*) lineColor
-                         progressColor:(UIColor*) progressColor
-                             fillColor:(UIColor*) fillColor
-                             labelFont:(UIFont*) font;
+-(void) setProgressWithStartDate:(NSDate*) start
+                      andEndDate:(NSDate*) endDate
+                   andUnfillMode:(BOOL) unFillMode
+                        animated:(BOOL) animated;
 
--(void) updateProgressWithStartDate:(NSDate*) start andEndDate:(NSDate*) endDate andUnfillMode:(BOOL) unFillMode animated:(BOOL) animated;
+-(void) setStyleWithLineWidth:(CGFloat) lineWidth
+                progressWidth:(CGFloat) progressWidth
+                    lineColor:(UIColor*) lineColor
+                progressColor:(UIColor*) progressColor
+                    fillColor:(UIColor*) fillColor
+                    labelFont:(UIFont*) font;
+
+
 
 @end

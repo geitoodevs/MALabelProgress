@@ -74,12 +74,12 @@
 
 #pragma mark - Public
 
--(void) setCircleProgressWithLineWidth:(CGFloat) lineWidth
-                         progressWidth:(CGFloat) progressWidth
-                             lineColor:(UIColor*) lineColor
-                         progressColor:(UIColor*) progressColor
-                             fillColor:(UIColor*) fillColor
-                             labelFont:(UIFont*) font{
+-(void) setStyleWithLineWidth:(CGFloat) lineWidth
+                progressWidth:(CGFloat) progressWidth
+                    lineColor:(UIColor*) lineColor
+                progressColor:(UIColor*) progressColor
+                    fillColor:(UIColor*) fillColor
+                    labelFont:(UIFont*) font{
 
     self.lineWidth = lineWidth;
     self.progressWidth = progressWidth;
@@ -92,7 +92,10 @@
     [self setNeedsDisplay];
 }
 
--(void) updateProgressWithStartDate:(NSDate*) start andEndDate:(NSDate*) endDate andUnfillMode:(BOOL) unFillMode animated:(BOOL) animated{
+-(void) setProgressWithStartDate:(NSDate*) start
+                      andEndDate:(NSDate*) endDate
+                   andUnfillMode:(BOOL) unFillMode
+                        animated:(BOOL) animated{
     
     NSTimeInterval totalDaysInSeconds = [endDate timeIntervalSinceDate:start];
     double secondsInAnHour = 3600;
@@ -122,7 +125,10 @@
 }
 
 #pragma mark - Setters
--(void)setProgress:(CGFloat)aProgress animated:(BOOL) animated andDateMode:(BOOL) dateMode{
+
+-(void)setProgress:(CGFloat)aProgress
+          animated:(BOOL) animated
+       andDateMode:(BOOL) dateMode{
    
     if (self.startPoint!=0){
         [self setStartPoint:0.f];
