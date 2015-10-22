@@ -1,6 +1,9 @@
 # MALabelProgress
 UILabel subclass simple circular progress for iOS - Objective C.
 
+![MALabelProgress](https://github.com/miguelappsonline/MALabelProgress/blob/master/Examples/example_one.gif)
+![MALabelProgress](https://github.com/miguelappsonline/MALabelProgress/blob/master/Examples/example_two.gif)
+![MALabelProgress](https://github.com/miguelappsonline/MALabelProgress/blob/master/Examples/example_three.gif)
 
 ## Usage
 
