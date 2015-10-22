@@ -11,7 +11,6 @@ UILabel subclass simple circular progress for iOS - Objective C.
 
 ```objective-c
 // You can customize the lines width, lines color, fill color and label’s font.
-
 -(void) setStyleWithLineWidth:(CGFloat) lineWidth
                 progressWidth:(CGFloat) progressWidth
                     lineColor:(UIColor*) lineColor
@@ -26,11 +25,14 @@ UILabel subclass simple circular progress for iOS - Objective C.
 
 // Set a percentage of the progress. Values between 0-100.
 // The label’s text shows the number of percent 0-100.
+// unFillMode to show the progress inverted
 -(void) setProgressPercent:(CGFloat) percent
-                  animated:(BOOL) animated;
+             andUnfillMode:(BOOL) unFillMode
+                  animated:(BOOL) animated
 
 // Set a progress between two dates related to the current date.
 // The label’s text shows the number of days left to the end date.
+// unFillMode to show the progress inverted
 -(void) setProgressWithStartDate:(NSDate*) start
                       andEndDate:(NSDate*) endDate
                    andUnfillMode:(BOOL) unFillMode

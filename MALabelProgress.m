@@ -147,6 +147,14 @@
     }
 }
 
+-(void) setProgressPercent:(CGFloat) percent
+              andUnfillMode:(BOOL) unFillMode
+                   animated:(BOOL) animated{
+    
+    self.unFillMode = unFillMode;
+    [self setProgressPercent:percent animated:animated];
+}
+
 -(void) setProgressPercent:(CGFloat) percent animated:(BOOL) animated{
     
     [self setProgress:(percent/100)*360 animated:animated];

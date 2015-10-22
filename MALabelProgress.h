@@ -24,6 +24,7 @@
 
 
 -(void) setProgressPercent:(CGFloat) percent
+             andUnfillMode:(BOOL) unFillMode
                   animated:(BOOL) animated;
 
 -(void) setProgressWithStartDate:(NSDate*) start
